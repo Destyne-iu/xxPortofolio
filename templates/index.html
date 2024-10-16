@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  *{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    padding: 15px 30px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-left: 15px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f39c12 !important;
+  }
+  
+  /* Home Section */
+  .home {
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #e74c3c), url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .home p {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .home .btn-warning {
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px
+  }
+</style>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Pengalaman</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home d-flex align-items-center text-center">
+    <div class="container">
+      <h1 class="display-3 text-white">Hi Guys, Saya Rahmat Triandi</h1>
+      <p class="lead text-white">Seorang Mahasiswa</p>
+      <a href="#projects" class="btn btn-warning mt-4">Lihat Proyek Saya</a>
+    </div>
+  </section>
+
+  <!-- Profil Section -->
+  <section id="about" class="about py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <p class="section-description">Saya seorang Mahasiswa Prodi Teknik Informatika dari Universitas Malikussaleh yang memiliki ketertarikan dalam dunia teknologi.
+        Saya juga mempunyai harapan untuk menjadi seorang web developer yang inovatif dan kreatif.
+        Dengan pengalaman di berbagai bahasa pemograman yang saya pelajari, saya terus berusaha untuk meningkatkan
+         keterampilan yang saya miliki dan mengeksplorasi hal hal baru yang ada di dalam industri teknologi</p>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <img src="/static/foto.jpg" alt="Profil" class="img-fluid rounded-circle shadow">
+        </div>
+        <div class="col-md-8 offset-md-2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pengalaman / Project Section -->
+  <section id="projects" class="projects py-5 text-center">
+    <div class="container">
+      <h2 class="section-title">Pengalaman dan Proyek</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/static/1.png" class="card-img-top" alt="Proyek 1">
+            <div class="card-body">
+              <h5 class="card-title">Data Pasien berbasis Web</h5>
+              <p class="card-text">Sistem ini dibangun dengan bahasa pemrograman PHP dan dengan XAMPP, MySQL.</p>
+              <a href="#" class="btn btn-primary">Detail Proyek</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/static/2.png" class="card-img-top" alt="Proyek 2">
+            <div class="card-body">
+              <h5 class="card-title">Aplikasi Kasir Restoran</h5>
+              <p class="card-text">Aplikasi ini dibangun dengan bahasa pemrograman Java pada Apache NetBeans dan dengan XAMPP, MySQL.</p>
+              <a href="#" class="btn btn-primary">Detail Proyek</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/static/3.png" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Rekam Medis</h5>
+              <p class="card-text">Sistem ini dibangun dengan bahasa pemrograman PHP dan dengan XAMPP, MySQL.</p>
+              <a href="#" class="btn btn-primary">Detail Proyek</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="contact" class="contact py-5 text-white" style="background-color: #2c3e50;">
+    <div class="container">
+      <h2 class="section-title text-center text-white">Hubungi Saya</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Nama</label>
+            <input type="text" class="form-control" id="name" placeholder="Masukkan Nama">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesan Anda"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 text-center text-white" style="background-color: #2c3e50;">
+    <div class="container">
+      <div class="mb-3">
+        <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="text-white mx-2">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank" class="text-white mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 Copyright: Rahmattriandy. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
